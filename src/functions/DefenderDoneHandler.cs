@@ -12,7 +12,8 @@ namespace az_func_eg_eh_sb_stg
     {
         private readonly ILogger<DefenderDoneHandler> _logger = logger;
 
-        [Function(nameof(DefenderDoneHandler)), ]
+        [Function(nameof(DefenderDoneHandler))]
+        [EventHubOutput("outputEvent", Connection = "EventHubConnectionAppSetting")]
         public void Run([EventGridTrigger] CloudEvent cloudEvent) //, FunctionContext context)
         {
 //             using (var output = binder.BindAsync<T>(new BindingTypeAttribute(...)))
