@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "az_func_eg_eh_sb_stg": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7260",
+      "launchBrowser": false
+    }
+  }
+}
