@@ -6,7 +6,7 @@ using Azure.Messaging;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
-namespace az_func_eg_eh_sb_stg
+namespace az_func_eg_eh_sb_stg.Functions
 {
     public class DefenderDoneHandler(ILogger<DefenderDoneHandler> logger)
     {
